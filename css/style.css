@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    font-family: roboto;
+}
+@font-face{
+    font-family: roboto;
+    src: url("../fonts/Roboto-Regular.ttf");
+    font-weight: 400;
+}
+a{
+    text-decoration: none;
+    color: honeydew; 
+}
+h1{
+    color: rgb(93, 78, 192);
+    text-align: center;
+    font-size: 48px;
+    font-family: roboto;
+    font-weight: bold;
+}
+h2{
+   color:rgb(70, 62, 122) ;
+   text-align: center;
+   font-family: roboto;
+}
+/*меню*/
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgb(93, 78, 192);
+}
+.header__logo {
+    width: 75px;
+    height: 45px;
+    background: url(../images/logo/2.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+.header__menu {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    min-height: 45px;
+    align-items: center;
+}
+/*главная*/
+.section_main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 150px;
+    padding: 50px;
+}
+.main__text{
+    max-width: 400px;
+}
+.main__img{
+    width: 388px;
+    height: 388px;
+    background-color:rgb(194, 186, 247) ;
+}
+.main__text p{
+    margin-top: 20px;
+}
+/*алгоритм*/
+.section_algo {
+    background-color: rgb(194, 186, 247);
+    padding: 20px 0;
+}
+.algo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    padding: 30px;
+}
+.algo li{
+    list-style: none;
+    width: 200px;
+    height: 70px;
+    padding: 10px 10px;
+    border: 2px solid rgb(93, 78, 192);
+    transition: 2s;
+    text-align: center;
+    align-items: center;
+    font-family: roboto;
+    font-size: 12px;
+    display: flex;
+}
+.algo li:hover{
+    border-radius: 30px;
+    background-color: rgb(93, 78, 192);
+    color: ghostwhite;
+}
+/*отзывы*/
+.section_review {
+    padding: 50px;
+}
+.reviews{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+}
+.review {
+    width:250px ;
+    height: 150px;
+    padding: 20px;
+    border: 2px solid rgb(93, 78, 192);
+}
+.review__fio {
+    font-family: roboto;
+    font-weight: bold;
+    font-size: 18px;
+    color:rgb(70, 62, 122) ;
+
+}
+.review__text {
+    font-family: roboto;
+    font-size: 14px;
+    padding-top: 10px;  
+}
+/*форма*/
+.section_search {
+    background-color: rgb(194, 186, 247);
+    width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+}
+.search {
+   padding-top: 30px;
+}
+.search__row{
+    display: flex;
+    padding-bottom: 10px;
+    align-items: center;
+}
+.search__row label{
+    display: block;
+    width: 50%;
+    min-width: 200px;
+    font-family: roboto;
+    font-size: 18px;
+}
+.search__row select, .search__row input{
+    width: 50%;
+}
+.search__button{
+    display: flex;
+    justify-content: flex-end;
+}
+.button {
+    display: block;
+    flex-shrink: 0;
+    background-color:rgb(93, 78, 192)   ;
+    font-family: roboto;
+    font-size: 14px;
+    padding: 10px 20px;
+    width: fit-content;
+    color: honeydew;
+}
+select, input{
+    height: 35px;
+    box-sizing: border-box;
+}
+/*акции*/
+.section_promo {
+    padding: 30px;
+}
+.promo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+}
+.promo_card{
+    width: 300px;
+    border: 2px solid rgb(93, 78, 192);
+    padding: 20px;
+}
+.promo__img {
+    width: 100%;
+    aspect-ratio: 3/2;
+    background-size: cover;
+}
+.promo__namt {
+    font-family: roboto;
+    font-weight: bold;
+    color: rgb(93, 78, 192);
+    padding: 10px;
+}
+.promo__text {
+    font-family: roboto;
+    font-size: 12px; 
+    white-space: pre-wrap;
+    padding: 10px;
+}
+.subscribe {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+/*подвал*/
+.footer {
+    background-color: rgb(93, 78, 192);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.footer li{
+    list-style: none;
+    padding: 5px;
+    font-family: roboto;
+    padding: 5px;
+    color: honeydew;
+}
+.footer_tel{
+    font-family: roboto;
+    padding-top: 50px;
+}
+/*страница поиска локаций*/
+.search_text{
+    padding: 30px;
+}
+.search_text p{
+    font-weight: bold;
+    padding-top: 20px;
+}
+.search_cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+.search_card{
+    width:300px ;
+    padding: 0 20px;
+    border: 2px solid rgb(93, 78, 192);
+    white-space: pre-wrap;  
+}
