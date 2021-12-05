@@ -128,9 +128,6 @@ h2{
 }
 /*форма*/
 .section_search {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
     background-color: rgb(194, 186, 247);
     width: 600px;
     margin: 0 auto;
@@ -141,6 +138,7 @@ h2{
 }
 .search__row{
     display: flex;
+    flex-wrap: wrap;
     padding-bottom: 10px;
     align-items: center;
 }
