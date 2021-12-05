@@ -42,6 +42,7 @@ h2{
 }
 .header__menu {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     list-style: none;
     min-height: 45px;
@@ -109,7 +110,7 @@ h2{
 }
 .review {
     width:250px ;
-    height: 150px;
+    height: 200px;
     padding: 20px;
     border: 2px solid rgb(93, 78, 192);
 }
@@ -127,6 +128,9 @@ h2{
 }
 /*форма*/
 .section_search {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
     background-color: rgb(194, 186, 247);
     width: 600px;
     margin: 0 auto;
