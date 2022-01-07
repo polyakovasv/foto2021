@@ -45,6 +45,7 @@ body{
 }
 .header__menu {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     list-style: none;
     min-height: 45px;
@@ -72,7 +73,7 @@ body{
     height: 340px;
     background-color:rgb(194, 186, 247) ;
 }
-.img{
+.foto{
     transform:rotate(-10deg) ;
 }
 .main__text p{
@@ -126,7 +127,7 @@ body{
 }
 .review {
     width:250px ;
-    height: 150px;
+    height: 200px;
     padding: 20px;
     border: 2px solid rgb(93, 78, 192);
 }
