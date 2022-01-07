@@ -12,19 +12,22 @@
     <div class="header">
         <div class="header__logo"></div>
         <ul class="header__menu">
-            <li><a href="#">Акции</a></li>
-            <li><a href="#">Поиск</a></li>
-            <li><a href="#">Управление бронированием</a></li>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="#a1">Акции</a></li>
+            <li><a href="search.html">Поиск</a></li>
+            <li><a href="booking.html">Управление бронированием</a></li>
         </ul>
     </div>
     <!--главная-->
     <div class="section section_main">
         <div class="main__img">
-            <img src="images/location/2.jpg">
+            <div class="square">
+               <img src="images/location/5.jpg" class="img">
+            </div>
         </div>
         <div class="main__text">
-            <h1>Сделай жизнь ярче!</h1>
-            <h2>Cохраним самые яркие моменты вашей жизни на долгие годы</h2>
+            <h1 class="mt-h1">Сделай жизнь ярче!</h1>
+            <h2 class="mt-h2">Cохраним самые яркие моменты вашей жизни на долгие годы</h2>
             <p>У нас Вы сможете подобрать подходящий зал для Вашей фотосессии, приобрести подарочные сертификаты и даже сделать съёмку с нашим фотографом! 
                 В наших студиях современное осветительное оборудование с множеством светоформирующих насадок, оригинальные декорации, разнообразный реквизит и большой опыт наших сотрудников.</p>
         </div>
@@ -69,21 +72,21 @@
     <!--форма-->
     <div class="section section_search">
         <h2>Выбрать локацию</h2>
-        <div class="search">
+        <div class="search_main">
             <div class="search__row">
                 <label>Выбрать регигн</label>
-                <select>
-                    <option>Алтайский край</option>
-                    <option>Красноярский край</option>
+                <select class="field1">
+                    <option  class="field1">Алтайский край</option>
+                    <option  class="field1">Красноярский край</option>
                 </select>
             </div>
             <div  class="search__row">
                 <label for="">Выбрать дату</label>
-                <input type="date" id="">
+                <input type="date" id=""  class="field1">
             </div>
             <div  class="search__row">
                 <label for="">Количество человек</label>
-                <input type="namber" id="">
+                <input type="namber" id=""  class="field1">
             </div>
             <div  class="search__button">
                <a href="search.html" class="button section__button">Найти</a>
@@ -92,7 +95,7 @@
     </div>
     <!--акции-->
     <div class="section section_promo">
-        <h2>Акции</h2>
+        <h2 id="a1">Акции</h2>
         <div class="promo">
             <div class="promo_card">
                 <div class="promo__img"> <img src="images/promo/promotion1.jpg"></div>
@@ -151,7 +154,7 @@
     <div class="section section_subscribe">
         <h2>Подписаться на закрытые акции</h2>
         <div class="subscribe">
-            <input type="email" placeholder="Введите E-mail">
+            <input type="email" placeholder="Введите E-mail"  class="field">
             <div class="button">Подписаться</div>
         </div>
     </div>

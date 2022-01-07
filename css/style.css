@@ -23,6 +23,9 @@ h2{
    text-align: center;
    font-family: roboto;
 }
+body{
+    background-color: rgb(239, 238, 248);
+}
 /*меню*/
 .header {
     display: flex;
@@ -53,18 +56,32 @@ h2{
     flex-wrap: wrap;
     justify-content: center;
     gap: 150px;
-    padding: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 .main__text{
     max-width: 400px;
 }
+.square{
+    width: 384px;
+    height: 336px;
+    border: 3px solid rgb(93, 78, 192); 
+}
 .main__img{
     width: 388px;
-    height: 388px;
+    height: 340px;
     background-color:rgb(194, 186, 247) ;
+}
+.img{
+    transform:rotate(-10deg) ;
 }
 .main__text p{
     margin-top: 20px;
+}
+.mt-h2{
+    margin-top:20px ;
+    margin-bottom: 20px;
+    text-align: left;
 }
 /*алгоритм*/
 .section_algo {
@@ -128,15 +145,21 @@ h2{
 /*форма*/
 .section_search {
     background-color: rgb(194, 186, 247);
-    width: 600px;
+    width: 800px;
     margin: 0 auto;
     padding: 30px;
 }
-.search {
+.field1{
+    border:1px solid rgb(93, 78, 192) ;
+    outline: none;
+    background-color:rgb(194, 186, 247);
+}
+.search_main{
    padding-top: 30px;
 }
 .search__row{
     display: flex;
+    flex-wrap: wrap;
     padding-bottom: 10px;
     align-items: center;
 }
@@ -227,23 +250,99 @@ select, input{
     padding-top: 50px;
 }
 /*страница поиска локаций*/
-.search_text{
-    padding: 30px;
+.search_h{
+   padding:100px ; 
 }
-.search_text p{
-    font-weight: bold;
-    padding-top: 20px;
-}
-.search_cards{
+.searchs{
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
     justify-content: space-around;
-    padding-top: 30px;
+    gap: 20px;
+    margin-bottom: 100px;
 }
-.search_card{
-    width:300px ;
-    padding: 0 20px;
-    border: 2px solid rgb(93, 78, 192);
-    white-space: pre-wrap;  
+.search_location{
+    width: 600px;
+    min-height: 550px;
+    border: 2px solid rgb(93, 78, 192); 
+}
+.search_container{
+    padding-left: 50px;
+}
+.search_img{
+    width: 500px;
+    height: 300px;
+    padding: 20px 50px;
+}
+.search_region{
+    padding-top: 10px;
+}
+.search_dt{
+    font-weight: bold;
+    padding-top: 10px;
+}
+.search_address{
+    padding-top: 10px;
+}
+.button-search{
+    margin-top: 30px;
+}
+/*выбор зоны локации*/
+
+.search_res{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    margin-bottom: 100px;
+}
+.sz{
+    border: 2px solid rgb(93, 78, 192) ;
+    padding: 20px;
+}
+.button-sz{
+    margin-top: 20px;
+}
+/*бронирование*/
+.st{
+   padding-bottom: 40px; 
+}
+.search {
+    width: 700px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 2px solid rgb(93, 78, 192) ;
+    margin-bottom: 50px;
+}
+.search__field {
+    display: flex;
+    padding-bottom: 10px;
+    align-items: center;
+}
+.search__field label{
+    display: block;
+    min-width: 200px;
+    width: 50%;
+}
+.search__field select, .search__field input,.search__field textarea {
+    width: 50%;
+}
+.chb{
+    width: 700px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 2px solid rgb(93, 78, 192) ;
+    margin-bottom: 50px;
+}
+.check{
+   padding: 10px;
+}
+textarea{
+    height: 70px;
+    border:1px solid rgb(93, 78, 192) ;
+    background-color: rgb(239, 238, 248);;
+}
+.field{
+    border:1px solid rgb(93, 78, 192) ;
+    outline: none;
+    background-color:rgb(239, 238, 248);  
 }

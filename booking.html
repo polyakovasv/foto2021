@@ -1,23 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Страница бронирования</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="header">
         <div class="header__logo"></div>
         <ul class="header__menu">
-            <li><a href="#">Акции</a></li>
-            <li><a href="#">Поиск</a></li>
-            <li><a href="#">Управление бронированием</a></li>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="index.html#a1">Акции</a></li>
+            <li><a href="search.html">Поиск</a></li>
+            <li><a href="booking.html">Управление бронированием</a></li>
         </ul>
+    </div>
+    <h1 class="search_h">Страница бронирования</h1>
+    <div class="search">
+        <h2 class="st">Данные о заказе</h2>
+        <div class="search__field">
+            <label>Выбрать регион</label>
+            <select class="field">
+                <option class="field">Алтайский край</option>
+                <option class="field">Красноярский край</option>
+            </select>
+        </div>
+        <div class="search__field">
+            <label for="">Адрес локации </label>
+            <input type="text" name="" id="" class="field">
+        </div>
+        <div class="search__field">
+            <label for="">Выбранные зоны </label>
+            <input type="text" name="" id="" class="field">
+        </div>
+        <div class="search__field">
+            <label for="">Дата и время </label>
+            <input type="date" name="" id="" class="field">
+        </div>
+        <div class="search__field">
+            <label for="">Количество участников</label>
+            <input type="number" name="" id="" class="field">
+        </div>
+        <div class="search__field">
+            <label for="">Cтоимость </label>
+            <input type="number" name="" id="" class="field">
+        </div>   
+    </div>
+    <div class="chb">
+        <h2 class="st">Выбор дополнительных услуг</h2>
+        <div class="check">
+            <input type="checkbox" id="cb1" name="services" value="фотограф">
+            <lable for="cb1">Услуги фотографа - 2000 р/час</lable>
+        </div>
+        <div class="check">
+            <input type="checkbox" id="cb2" name="services" value="реквизит">
+            <lable for="cb2">Услуги использования реквизита для съёмок - от 500 р/час</lable>
+        </div>
+        <div class="check">
+            <input type="checkbox" id="cb3" name="services" value="печать">
+            <lable for="cb3">Услуги моментальной печати фотографий - 30 руб/шт</lable>
+        </div>
+        <div class="check">
+            <input type="checkbox" id="cb4" name="services" value="такси">
+            <lable for="cb4">Услуги такси - 50  р + 10 р за каждый км  
+            </lable>
+        </div>
+    </div>
+    <div class="search">
+        <div  class="search__field">
+            <label> Комментарий</label>
+            <textarea name="comment"></textarea>
+        </div>
+        <div  class="search__field">
+            <label>Ваш E-mail</label>
+            <input type="email" class="field">
+       </div>
+       <div class="search__field">
+            <label for=""> Итоговая стоимость </label>
+            <input type="number" name="" id="" class="field">
+            </div>
+        <div class="search__button">
+            <a href="#" class="button section__button">
+                Забронировать
+            </a>
+        </div>
     </div>
     <div class="footer">
         <div class="footer_tel">
            <a href="tel:+78003333030">8(800)333-30-30</a>
+
         </div>
         <div class="footer_nav">
             <ul>
